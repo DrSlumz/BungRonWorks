@@ -1,0 +1,361 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+}
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+.headerbox {
+    display: flex;
+    flex-direction: column;
+}
+.upperheader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 75px;
+    background-color: white;
+}
+.upperheader a {
+    color: grey;
+}
+.upperheader svg {
+    fill: grey;
+}
+.upleft {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+}
+.upright {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+}
+.lowerheader {
+    background-color: black;
+    height: 50px;
+    padding: 5px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.mark {
+    font-size: xx-large;
+    color: white;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 222px;
+    height: 350px;
+}
+.cardname {
+    font-size: large;
+}
+.cardbutton {
+    font-size: large;
+}
+.wordbox {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+}
+.slide {
+    position: relative;
+}
+.datapicbox {
+    width: 100%;
+    height: 50dvh;
+}
+.datapic {
+    width: 100%;
+    height: 50dvh;
+    object-fit: cover;
+}
+.slideword {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: larger;
+    top: 50px;
+    left: 50px;
+    color: white;
+    padding: 30px;
+    z-index: 1;
+}
+.shop {
+    display: flex;
+    width: 125px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(120, 189, 16);
+    color: black;
+}
+.cardheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+.cardsection {
+    display: grid;
+    justify-items: center;
+    padding: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+.cardbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    gap: 15px;
+}
+.cards {
+    border-radius: 5px;
+    background-color: rgb(249, 249, 249);
+    box-shadow: 1px 1px 5px rgb(210, 210, 210);
+}
+.cards:hover {
+    box-shadow: 1px 1px 15px rgb(210, 210, 210);
+}
+.cards a {
+    color: black;
+}
+.cardpic {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.trainsection {
+    position: relative;
+}
+.trainpic {
+    width: 100%;
+    height: 50dvh;
+    object-fit: cover;
+}
+.trainpicbox {
+    width: 100%;
+    height: 50dvh;
+    object-fit: fill;
+}
+.trainabout {
+    position: absolute;
+    top: 50px;
+    left: 625px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.trainword {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+.trainpara {
+    width: 550px;
+}
+.trainbutton {
+    background-color: rgb(120, 189, 16);
+    width: 160px;
+    height: 60px;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+.lastsection {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 65px;
+    gap: 60px;
+}
+.linksec {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.lastlink {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.lastlink a {
+    color: greenyellow;
+}
+.lasthead {
+    color: white;
+    width: 200px;
+    border-bottom: 1px solid grey;
+    padding: 20px 0px;
+}
+.lastcolumn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contactsec {
+    display: flex;
+    flex-direction: row;
+    color: gray;
+    justify-content: space-between;
+    align-items: center;
+}
+.contactsecleft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.contactsecright {
+    fill: grey;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.contactsecleft svg {
+    fill: green;
+}
+.contactbutton {
+    background-color: green;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+footer {
+    padding: 25px 60px;
+}
+.footerlink {
+    color: grey;
+    display: flex;
+    flex-direction: row;
+}
+.footerlink a {
+    color: grey;
+    border-right: 1px solid grey;
+    padding: 3px 8px;
+}
+.footerlast {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: grey;
+}
+.equal {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+    .gone {
+        display: none;
+    }
+    .headerlogopic {
+        height: 20px;
+    }
+    .upperheader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 75px;
+        background-color: white;
+    }
+    .equal {
+        display: block;
+    }
+    .upperheader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 20px;
+        background-color: white;
+    }
+    .slidesection {
+        font-size: x-small;
+    }
+    .datapicbox {
+        height: 30dvh;
+    }
+    .datapic {
+        height: 30dvh;
+    }
+    .slideword {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: larger;
+        top: 50px;
+        left: 0px;
+    }
+    .mark {
+        font-size: medium;
+    }
+    .lowerheader {
+        padding: 0px 20px;
+    }
+    .cardsection {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .cardbox {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 5px 0px 5px;
+    }
+    .cardheader {
+        font-size: x-large;
+    }
+
+    .trainabout {
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .cardpic {
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        width: 100%;
+        height: 100%;
+    }
+    .wordbox {
+        height: 200px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-between;
+    }
+}

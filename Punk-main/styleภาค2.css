@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray: hsl(0, 0%, 42%);
+    --SuperGray: hsl(0, 0%, 7%);
+}
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--Yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    padding: 0 16px;
+}
+.bigboy {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    width: 384px;
+    height: 522px;
+    border-radius: 20px;
+    justify-content: space-between;
+    outline: 1px solid var(--SuperGray);
+    box-shadow: 8px 8px 0px var(--SuperGray);
+    padding: 24px;
+}
+.pic {
+    border-radius: 10px;
+    width: auto;
+    height: 200px;
+}
+.mid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.a {
+    background-color: var(--Yellow);
+    padding: 4px 12px;
+    border-radius: 4px;
+    width: min-content;
+    font-size: 14px;
+}
+.b {
+    color: var(--SuperGray);
+    font-size: 14px;
+}
+.c {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 750;
+}
+.d {
+    color: var(--Gray);
+    font-size: 16px;
+    line-height: 150%;
+}
+.bottom {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+}
+a:hover {
+    color: var(--Yellow);
+}
