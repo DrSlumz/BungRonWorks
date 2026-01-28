@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <title>Frontend Mentor | Tip calculator app</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <div class="tsplititle">
+                <h1 class="split">
+                    SPLI<br />
+                    TTER
+                </h1>
+            </div>
+            <div class="bigBox">
+                <div class="leftSide">
+                    <div class="amount">
+                        <h1 class="eachHeader">Bill</h1>
+                        <form class="billBox">
+                            <img src="images/icon-dollar.svg" alt="" />
+                            <input
+                                id="bill"
+                                class="bill"
+                                name="bill"
+                                type="number"
+                                placeholder="0"
+                            />
+                        </form>
+                    </div>
+                    <div class="tipAmount">
+                        <h1 class="eachHeader">Select Tip %</h1>
+                        <button class="tipPercent">5%</button>
+                        <button class="tipPercent">10%</button>
+                        <button class="tipPercent">15%</button>
+                        <button class="tipPercent">25%</button>
+                        <button class="tipPercent">50%</button>
+                        <button class="custom">Custom</button>
+                    </div>
+                    <div>
+                        <h1 class="eachHeader">Number of People</h1>
+                        <form class="billBox">
+                            <img src="/images/icon-person.svg" alt="" />
+                            <input
+                                id="people"
+                                class="people"
+                                name="people"
+                                type="number"
+                                placeholder="0"
+                            />
+                        </form>
+                    </div>
+                </div>
+                <div class="rightSide">
+                    <div class="rightSideUpper">
+                        <div class="tipTotalBox">
+                            <div class="tipText">
+                                <h2 class="money">Tip Amount</h2>
+                                <h3 class="person">/ person</h3>
+                            </div>
+                            <div class="tipCalculated">$0.00</div>
+                        </div>
+                        <div class="totalBox">
+                            <div class="totalText">
+                                <h2 class="money">Total</h2>
+                                <h3 class="person">/ person</h3>
+                            </div>
+                            <div class="tipCalculated">$0.00</div>
+                        </div>
+                    </div>
+                    <div class="rightSideLower">
+                        <button class="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
