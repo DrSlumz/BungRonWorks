@@ -1,0 +1,238 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --Navy950: hsl(226, 43%, 10%);
+    --Navy900: hsl(235, 46%, 20%);
+    --Purple500: hsl(235, 45%, 61%);
+    --Navy200: hsl(236, 100%, 87%);
+    --Purple600: hsl(246, 80%, 60%);
+    --Orange300work: hsl(15, 100%, 70%);
+    --Blue300play: hsl(195, 74%, 62%);
+    --Pink400study: hsl(348, 100%, 68%);
+    --Green400exercise: hsl(145, 58%, 55%);
+    --Purple700social: hsl(264, 64%, 52%);
+    --Yellow300selfcare: hsl(43, 84%, 65%);
+}
+body {
+    background-color: var(--Navy950);
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+.bigBox {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'reportCard workCard playCard studyCard'
+        'reportCard exerciseCard socialCard selfCareCard';
+    gap: 40px 20px;
+}
+.reportCard {
+    grid-area: reportCard;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    background-color: var(--Navy900);
+    border-radius: 10px;
+}
+.reportBoxUpper {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    background-color: var(--Purple600);
+    padding: 25px;
+    gap: 40px;
+    border-radius: 10px;
+}
+.reportPic {
+    width: 72px;
+    border-radius: 50%;
+    outline: 2px solid white;
+}
+.reportBoxLower {
+    display: flex;
+    background-color: var(--Navy900);
+    color: var(--Purple500);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.level {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: small;
+    font-weight: 300;
+}
+.statsLevelSelect {
+    font-size: medium;
+    font-weight: 300;
+}
+.statsLevelSelect:hover {
+    color: var(--Navy200);
+    cursor: pointer;
+}
+.repFor {
+    color: var(--Navy200);
+}
+.userName {
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+.workCard .cards {
+    background-color: var(--Orange300work);
+    border-radius: 10px;
+}
+.workCard .statsCardUpper {
+    background-color: var(--Orange300work);
+}
+.statsCardUpper {
+    display: flex;
+    justify-content: end;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    height: 30px;
+    z-index: 0;
+}
+.icons {
+    width: 60px;
+    padding-right: 15px;
+    position: absolute;
+}
+.statsCardLower {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Navy900);
+    border-radius: 10px;
+    height: 160px;
+    padding: 20px;
+    color: white;
+    position: relative;
+    gap: 30px;
+}
+.statsCardLower:hover {
+    background-color: rgb(50, 50, 100);
+    cursor: pointer;
+}
+.statsCardFirst {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.threeDots {
+    width: 14px;
+    height: 4px;
+}
+.statsCardHeader {
+    font-size: medium;
+    font-weight: 400;
+}
+.hours {
+    font-size: 40px;
+}
+.previous {
+    font-size: small;
+    color: var(--Purple500);
+}
+.workCard {
+    grid-area: workCard;
+}
+.playCard {
+    grid-area: playCard;
+}
+.playCard .cards {
+    background-color: var(--Blue300play);
+    border-radius: 10px;
+}
+.playCard .statsCardUpper {
+    background-color: var(--Blue300play);
+}
+.studyCard {
+    grid-area: studyCard;
+}
+.studyCard .cards {
+    background-color: var(--Pink400study);
+    border-radius: 10px;
+}
+.studyCard .statsCardUpper {
+    background-color: var(--Pink400study);
+}
+.exerciseCard {
+    grid-area: exerciseCard;
+}
+.exerciseCard .cards {
+    background-color: var(--Green400exercise);
+    border-radius: 10px;
+}
+.exerciseCard .statsCardUpper {
+    background-color: var(--Green400exercise);
+}
+.socialCard {
+    grid-area: socialCard;
+}
+.socialCard .cards {
+    background-color: var(--Purple700social);
+    border-radius: 10px;
+}
+.socialCard .statsCardUpper {
+    background-color: var(--Purple700social);
+}
+.selfCareCard {
+    grid-area: selfCareCard;
+}
+.selfCareCard .cards {
+    background-color: var(--Yellow300selfcare);
+    border-radius: 10px;
+}
+.selfCareCard .statsCardUpper {
+    background-color: var(--Yellow300selfcare);
+}
+
+@media screen and (max-width: 768px) {
+    .bigBox {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 300px;
+    }
+    .reportCard {
+        display: flex;
+        width: 300px;
+        background-color: var(--Navy900);
+        border-radius: 10px;
+    }
+    .reportBoxUpper {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        padding: 15px;
+    }
+    .repFor {
+        font-size: x-small;
+    }
+    .userName {
+        font-size: x-large;
+    }
+    .reportPic {
+        width: 50px;
+    }
+    .level {
+        display: flex;
+        flex-direction: row;
+        width: 260px;
+        justify-content: space-between;
+    }
+    .statsClassSecond {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

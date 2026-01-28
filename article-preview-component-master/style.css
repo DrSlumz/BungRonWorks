@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+main {
+    width: 100dvh;
+    height: 100dvh;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--LightGrayishBlue);
+    padding: 100px;
+}
+.bigbox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    height: auto;
+    font-family: 'Manrope', sans-serif;
+    background-color: white;
+}
+.pic {
+    object-fit: fill;
+    width: 380px;
+    height: 320px;
+}
+.picbox {
+    width: auto;
+    height: 320px;
+}
+.textbox {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.para {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.para1 {
+    font-size: 22px;
+}
+.para2 {
+    font-size: 15px;
+}
+.userbox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.userpic {
+    display: flex;
+    border-radius: 50%;
+    height: 36px;
+}
+.username {
+    font-size: 16px;
+}
+.userdate {
+    font-size: 14px;
+}
+.link {
+    background-color: var(--LightGrayishBlue);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link img {
+    width: 18px;
+    height: 18px;
+}
+
+#sharebox {
+    letter-spacing: 3px;
+    font-size: xx-small;
+    position: absolute;
+    bottom: 100%;
+    color: var(--DesaturatedDarkBlue);
+    display: none;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--VeryDarkGrayishBlue);
+    width: 250px;
+    height: 50px;
+    justify-content: center;
+    left: 250px;
+}
+.shareboxFlex {
+    letter-spacing: 3px;
+    font-size: xx-small;
+    position: absolute;
+    bottom: 110px;
+    color: var(--DesaturatedDarkBlue);
+    display: flex;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--VeryDarkGrayishBlue);
+    width: 250px;
+    height: 50px;
+    justify-content: center;
+    left: 250px;
+}
+@media screen and (max-width: 768px) {
+    .bigbox {
+        flex-direction: column;
+        width: 340px;
+    }
+    .pic {
+        object-fit: fill;
+        width: 340px;
+        height: 320px;
+    }
+    .picbox {
+        width: 340px;
+        height: 320px;
+    }
+    .para1 {
+        font-size: 18px;
+    }
+    .textbox {
+        width: 350px;
+    }
+    body {
+        padding: 10px;
+    }
+    #sharebox {
+        position: absolute;
+        color: var(--DesaturatedDarkBlue);
+        display: none;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        background-color: var(--VeryDarkGrayishBlue);
+        width: 340px;
+        height: 50px;
+        justify-content: center;
+        left: 0px;
+        bottom: 30px;
+    }
+    .textbox {
+        padding: 0;
+    }
+    .para {
+        padding: 30px;
+    }
+    .user {
+        padding: 30px;
+        position: relative;
+    }
+}

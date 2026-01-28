@@ -1,0 +1,194 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --Red: hsl(4, 100%, 67%);
+    --Blue800: hsl(234, 29%, 20%);
+    --Blue700: hsl(235, 18%, 26%);
+    --Grey: hsl(0, 0%, 58%);
+    --White: hsl(0, 0%, 100%);
+}
+body {
+    background-color: var(--Blue700);
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.bigbox {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--White);
+    width: 100%;
+    padding: 30px;
+    border-radius: 30px;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    font-family: 'roboto', sans-serif;
+}
+.textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.staybox {
+    font-size: 60px;
+}
+.joinbox {
+    width: 400px;
+}
+.listbox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.list {
+    display: flex;
+    gap: 10px;
+    font-size: 10.5px;
+}
+.emailbox {
+    display: flex;
+    flex-direction: column;
+}
+.formbox {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.enteremailbox {
+    display: flex;
+    position: relative;
+}
+.messagebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 375px;
+    gap: 8px;
+}
+.messageEmail {
+    display: flex;
+    justify-content: space-between;
+}
+.emailform {
+    width: 375px;
+    height: 50px;
+    padding: 20px;
+}
+.emailform:focus,
+.emailform:hover {
+    border: 2px solid rgb(0, 161, 97);
+    outline: none;
+}
+.emailValidate {
+    width: 375px;
+    height: 50px;
+    border: 2px solid var(--Red);
+    background-color: rgb(255, 179, 191);
+}
+.emailValidate:focus,
+.emailValidate:hover {
+    border: 2px solid rgb(252, 6, 6);
+}
+.error {
+    color: var(--Red);
+    display: flex;
+}
+.submitbutton {
+    width: 375px;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: var(--Blue800);
+    color: white;
+    font-size: large;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* Success Version */
+.successbox {
+    display: none;
+    flex-direction: column;
+    width: 30%;
+    height: max-content;
+    background-color: var(--White);
+    justify-self: center;
+    padding: 40px;
+    gap: 20px;
+    border-radius: 20px;
+    font-family: 'roboto', sans-serif;
+    align-self: center;
+}
+.successimg {
+    width: 20%;
+}
+.thxbox {
+    font-size: 40px;
+    color: var(--Blue800);
+}
+.confirmbox {
+    color: var(--Blue800);
+    font-size: medium;
+}
+.customeremail {
+    font-weight: bold;
+    padding-right: 4px;
+}
+.dismissbutton {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--Blue800);
+    color: var(--White);
+    text-align: center;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .bigbox {
+        width: 375px;
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+    .textbox {
+        padding: 32px 16px;
+        gap: 20px;
+        width: 375px;
+    }
+    .joinbox {
+        width: 75%;
+    }
+    .staybox {
+        font-size: 32px;
+    }
+    .pic {
+        width: 375px;
+    }
+    .emailform {
+        width: 90%;
+    }
+    .submitbutton {
+        width: 100%;
+    }
+    .successbox {
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+    }
+    .mobilegap {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}

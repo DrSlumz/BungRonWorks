@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'crossorigin', sans-serif;
+}
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Grey500: hsl(234, 12%, 34%);
+    --Grey400: hsl(212, 6%, 44%);
+    --White: hsl(0, 0%, 100%);
+}
+body {
+    padding: 40px;
+}
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.header1 {
+    color: var(--Grey400);
+    font-weight: 50;
+}
+.header2 {
+    color: var(--Grey500);
+}
+.header3 {
+    color: var(--Grey500);
+    font-weight: lighter;
+    text-align: center;
+    padding: 10px;
+}
+.cardbox {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.card1 {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    box-shadow: 1px 10px 20px var(--Grey400);
+    padding: 25px;
+    border-radius: 5px;
+    border-top: 5px solid var(--Cyan);
+    gap: 10px;
+}
+img {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-self: flex-end;
+}
+.card2 {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    box-shadow: 1px 10px 20px var(--Grey400);
+    padding: 25px;
+    border-radius: 5px;
+    border-top: 5px solid var(--Red);
+    gap: 10px;
+}
+.card3 {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    box-shadow: 1px 10px 20px var(--Grey400);
+    padding: 25px;
+    border-radius: 5px;
+    border-top: 5px solid var(--Orange);
+    gap: 10px;
+}
+.card4 {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    box-shadow: 1px 10px 20px var(--Grey400);
+    padding: 25px;
+    border-radius: 5px;
+    border-top: 5px solid var(--Blue);
+    gap: 10px;
+}
+.midcard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    .top {
+        padding: 20px;
+        font-size: smaller;
+    }
+    .cardbox {
+        flex-direction: column;
+    }
+}

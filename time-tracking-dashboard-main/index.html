@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <title>Frontend Mentor | Time tracking dashboard</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main class="bigBox">
+            <div class="reportCard">
+                <div class="reportBoxUpper">
+                    <div class="reportPicBox">
+                        <img
+                            class="reportPic"
+                            src="images/image-jeremy.png"
+                            alt="jeremy"
+                        />
+                    </div>
+                    <div class="reportTextBox">
+                        <p class="repFor">Report for</p>
+                        <h1 class="userName">Jeremy Robson</h1>
+                    </div>
+                </div>
+                <div class="reportBoxLower">
+                    <div class="level">
+                        <h2 class="statsLevelSelect" id="daily">Daily</h2>
+                        <h2 class="statsLevelSelect" id="weekly">Weekly</h2>
+                        <h2 class="statsLevelSelect" id="monthly">Monthly</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="workCard">
+                <div class="cards">
+                    <div class="statsCardUpper">
+                        <img
+                            class="icons"
+                            class="icons"
+                            src="images/icon-work.svg"
+                            alt="workIcon"
+                        />
+                    </div>
+                    <div class="statsCardLower">
+                        <div class="statsCardFirst">
+                            <h1 class="statsCardHeader">Work</h1>
+                            <img
+                                class="threeDots"
+                                src="images/icon-ellipsis.svg"
+                                alt="Dots"
+                            />
+                        </div>
+                        <div class="statsClassSecond">
+                            <p class="hours" id="work-current"></p>
+                            <p class="previous" id="work-previous"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playCard">
+                <div class="cards">
+                    <div class="statsCardUpper">
+                        <img
+                            class="icons"
+                            src="images/icon-play.svg"
+                            alt="playIcon"
+                        />
+                    </div>
+                    <div class="statsCardLower">
+                        <div class="statsCardFirst">
+                            <h1 class="statsCardHeader">Play</h1>
+                            <img
+                                class="threeDots"
+                                src="images/icon-ellipsis.svg"
+                                alt="Dots"
+                            />
+                        </div>
+                        <div class="statsClassSecond">
+                            <p class="hours" id="play-current"></p>
+                            <p class="previous" id="play-previous"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="studyCard">
+                <div class="cards">
+                    <div class="statsCardUpper">
+                        <img
+                            class="icons"
+                            src="images/icon-study.svg"
+                            alt="studyIcon"
+                        />
+                    </div>
+                    <div class="statsCardLower">
+                        <div class="statsCardFirst">
+                            <h1 class="statsCardHeader">Study</h1>
+                            <img
+                                class="threeDots"
+                                src="images/icon-ellipsis.svg"
+                                alt="Dots"
+                            />
+                        </div>
+                        <div class="statsClassSecond">
+                            <p class="hours" id="study-current"></p>
+                            <p class="previous" id="study-previous"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="exerciseCard">
+                <div class="cards">
+                    <div class="statsCardUpper">
+                        <img
+                            class="icons"
+                            src="images/icon-exercise.svg"
+                            alt="exerciseIcon"
+                        />
+                    </div>
+                    <div class="statsCardLower">
+                        <div class="statsCardFirst">
+                            <h1 class="statsCardHeader">Exercise</h1>
+                            <img
+                                class="threeDots"
+                                src="images/icon-ellipsis.svg"
+                                alt="Dots"
+                            />
+                        </div>
+                        <div class="statsClassSecond">
+                            <p class="hours" id="exercise-current"></p>
+                            <p class="previous" id="exercise-previous"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="socialCard">
+                <div class="cards">
+                    <div class="statsCardUpper">
+                        <img
+                            class="icons"
+                            src="images/icon-social.svg"
+                            alt="socialIcon"
+                        />
+                    </div>
+                    <div class="statsCardLower">
+                        <div class="statsCardFirst">
+                            <h1 class="statsCardHeader">Social</h1>
+                            <img
+                                class="threeDots"
+                                src="images/icon-ellipsis.svg"
+                                alt="Dots"
+                            />
+                        </div>
+                        <div class="statsClassSecond">
+                            <p class="hours" id="social-current"></p>
+                            <p class="previous" id="social-previous"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="selfCareCard">
+                <div class="cards">
+                    <div class="statsCardUpper">
+                        <img
+                            class="icons"
+                            src="images/icon-self-care.svg"
+                            alt="selfCareIcon"
+                        />
+                    </div>
+                    <div class="statsCardLower">
+                        <div class="statsCardFirst">
+                            <h1 class="statsCardHeader">Self Care</h1>
+                            <img
+                                class="threeDots"
+                                src="images/icon-ellipsis.svg"
+                                alt="Dots"
+                            />
+                        </div>
+                        <div class="statsClassSecond">
+                            <p class="hours" id="selfcare-current"></p>
+                            <p class="previous" id="selfcare-previous"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>
