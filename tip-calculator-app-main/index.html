@@ -31,10 +31,19 @@
                     <div class="amount">
                         <h1 class="eachHeader">Bill</h1>
                         <form class="billBox">
-                            <img src="images/icon-dollar.svg" alt="" />
+                            <img
+                                class="icon"
+                                src="images/icon-dollar.svg"
+                                alt=""
+                            />
+                            <label
+                                for="bill"
+                                class="billWrongNumber"
+                                id="billWrongNumber"
+                            ></label>
                             <input
                                 id="bill"
-                                class="bill"
+                                class="bar"
                                 name="bill"
                                 type="number"
                                 placeholder="0"
@@ -43,20 +52,45 @@
                     </div>
                     <div class="tipAmount">
                         <h1 class="eachHeader">Select Tip %</h1>
-                        <button class="tipPercent">5%</button>
-                        <button class="tipPercent">10%</button>
-                        <button class="tipPercent">15%</button>
-                        <button class="tipPercent">25%</button>
-                        <button class="tipPercent">50%</button>
-                        <button class="custom">Custom</button>
+                        <div class="btnGrid">
+                            <button class="tipPercent" id="tipPercent5">
+                                5%
+                            </button>
+                            <button class="tipPercent" id="tipPercent10">
+                                10%
+                            </button>
+                            <button class="tipPercent" id="tipPercent15">
+                                15%
+                            </button>
+                            <button class="tipPercent" id="tipPercent25">
+                                25%
+                            </button>
+                            <button class="tipPercent" id="tipPercent50">
+                                50%
+                            </button>
+                            <input
+                                class="custom"
+                                id="tipPercentCustom"
+                                placeholder="Custom"
+                            />
+                        </div>
                     </div>
-                    <div>
+                    <div class="peopleAmount">
                         <h1 class="eachHeader">Number of People</h1>
                         <form class="billBox">
-                            <img src="/images/icon-person.svg" alt="" />
+                            <img
+                                class="icon"
+                                src="images/icon-person.svg"
+                                alt=""
+                            />
+                            <label
+                                for="people"
+                                class="wrongNumber"
+                                id="wrongNumber"
+                            ></label>
                             <input
                                 id="people"
-                                class="people"
+                                class="bar"
                                 name="people"
                                 type="number"
                                 placeholder="0"
@@ -66,26 +100,31 @@
                 </div>
                 <div class="rightSide">
                     <div class="rightSideUpper">
-                        <div class="tipTotalBox">
-                            <div class="tipText">
-                                <h2 class="money">Tip Amount</h2>
-                                <h3 class="person">/ person</h3>
-                            </div>
-                            <div class="tipCalculated">$0.00</div>
-                        </div>
                         <div class="totalBox">
                             <div class="totalText">
                                 <h2 class="money">Total</h2>
                                 <h3 class="person">/ person</h3>
                             </div>
-                            <div class="tipCalculated">$0.00</div>
+                            <div class="totalCalculated" id="totalCalculated">
+                                $0.00
+                            </div>
+                        </div>
+                        <div class="tipTotalBox">
+                            <div class="tipText">
+                                <h2 class="money">Tip Amount</h2>
+                                <h3 class="person">/ person</h3>
+                            </div>
+                            <div class="tipCalculated" id="tipCalculated">
+                                $0.00
+                            </div>
                         </div>
                     </div>
                     <div class="rightSideLower">
-                        <button class="reset">Reset</button>
+                        <button class="reset" id="reset">RESET</button>
                     </div>
                 </div>
             </div>
         </main>
     </body>
+    <script src="script.js"></script>
 </html>
